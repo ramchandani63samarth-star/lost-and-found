@@ -1,4 +1,4 @@
 window.APP_CONFIG = {
-  API_BASE: "http://localhost:5000/api",
-  API_ORIGIN: "http://localhost:5000"
+  API_BASE: "https://lost-and-found-582n.onrender.com/api",
+  API_ORIGIN: "https://lost-and-found-582n.onrender.com"
 };
