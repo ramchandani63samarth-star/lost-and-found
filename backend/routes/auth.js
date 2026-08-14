@@ -20,9 +20,13 @@ router.post("/register", async (req, res) => {
       [name, email, hash, phone || null]
     );
     res.status(201).json({ message: "Registration successful.", userId: result.insertId });
-  } catch (e) {
-    res.status(500).json({ message: "Registration failed.", error: e.message });
-  }
+ } catch (e) {
+  console.error("[REGISTER ERROR]", e);
+  res.status(500).json({
+    message: "Registration failed.",
+    error: e.message
+  });
+}
 });
 
 router.post("/login", async (req, res) => {
