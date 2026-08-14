@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard · Lost &amp; Found</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container">
+    <a class="brand" href="index.html"><span class="brand-mark">↗</span> Lost &amp; Found</a>
+    <nav id="nav-actions" class="nav-actions"></nav>
+  </div>
+</header>
+
+<main class="container" style="padding: 44px 0 60px">
+  <h1 id="welcome" style="margin-bottom:24px;">Welcome back.</h1>
+
+  <div class="dashboard-grid">
+    <div class="dash-stat">
+      <b id="report-count">–</b>
+      <span>Your reports</span>
+    </div>
+    <div class="dash-stat">
+      <b id="claim-count">–</b>
+      <span>Your claims</span>
+    </div>
+    <div class="dash-stat">
+      <b id="received-count">–</b>
+      <span>Pending claims on your items</span>
+    </div>
+  </div>
+
+  <section style="margin-bottom:40px">
+    <div class="section-header">
+      <h2>Pending claims on your items</h2>
+      <a class="text-link" href="claims.html">View all →</a>
+    </div>
+    <div id="recent-claims"></div>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <h2>Your recent reports</h2>
+      <a class="text-link" href="report.html">+ New report</a>
+    </div>
+    <div id="recent-reports" class="cards"></div>
+  </section>
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/common.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

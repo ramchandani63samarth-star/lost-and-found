@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Claims · Lost &amp; Found</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container">
+    <a class="brand" href="index.html"><span class="brand-mark">↗</span> Lost &amp; Found</a>
+    <nav id="nav-actions" class="nav-actions"></nav>
+  </div>
+</header>
+
+<main class="container" style="padding: 44px 0 60px">
+  <div class="eyebrow">Your activity</div>
+  <h1 style="margin-bottom:28px">Claims</h1>
+
+  <section style="margin-bottom:40px">
+    <h2 style="margin-bottom:16px">Claims you submitted</h2>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr><th>Item</th><th>Type</th><th>Reporter</th><th>Submitted</th><th>Status</th></tr></thead>
+        <tbody id="my-claims"><tr><td colspan="5" class="empty-cell">Loading…</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="margin-bottom:16px">Claims received on your items</h2>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr><th>Item</th><th>Claimant</th><th>Email</th><th>Date</th><th>Status</th><th>Actions</th></tr></thead>
+        <tbody id="received-claims"><tr><td colspan="6" class="empty-cell">Loading…</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/common.js"></script>
+<script src="js/claims-page.js"></script>
+</body>
+</html>

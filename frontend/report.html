@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report Item · Lost &amp; Found</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container">
+    <a class="brand" href="index.html"><span class="brand-mark">↗</span> Lost &amp; Found</a>
+    <nav id="nav-actions" class="nav-actions"></nav>
+  </div>
+</header>
+
+<main class="form-wrap">
+  <form id="report-form" class="form-card" enctype="multipart/form-data" novalidate>
+    <div class="eyebrow">Make a report</div>
+    <h1>Report an item</h1>
+    <p class="lead" style="margin-bottom:4px">Fields marked <span class="req">*</span> are required.</p>
+
+    <label>Report type <span class="req">*</span>
+      <select name="type" required>
+        <option value="lost">I lost this item</option>
+        <option value="found">I found this item</option>
+      </select>
+    </label>
+    <label>Title <span class="req">*</span>
+      <input name="title" placeholder="e.g. Black leather wallet" required maxlength="150">
+    </label>
+    <label>Category <span class="req">*</span>
+      <select name="category" required>
+        <option value="">Select a category</option>
+        <option>Electronics</option>
+        <option>Documents</option>
+        <option>Wallet</option>
+        <option>Keys</option>
+        <option>Bags</option>
+        <option>Clothing</option>
+        <option>Jewellery</option>
+        <option>Other</option>
+      </select>
+    </label>
+    <label>Description <span class="req">*</span>
+      <textarea name="description" placeholder="Describe identifying details — colour, brand, any unique marks…" required></textarea>
+    </label>
+    <label>Location <span class="req">*</span>
+      <input name="location" placeholder="e.g. Library ground floor, Block A canteen…" required maxlength="150">
+    </label>
+    <label>Date of loss / discovery <span class="req">*</span>
+      <input type="date" name="event_date" required>
+    </label>
+    <label>Photo (optional — max 5 MB)
+      <input type="file" name="image" accept="image/*">
+    </label>
+    <button class="btn btn-primary" type="submit">Submit report</button>
+  </form>
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/common.js"></script>
+<script src="js/report.js"></script>
+</body>
+</html>

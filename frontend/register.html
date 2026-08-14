@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create account · Lost &amp; Found</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container">
+    <a class="brand" href="index.html"><span class="brand-mark">↗</span> Lost &amp; Found</a>
+  </div>
+</header>
+
+<main class="form-wrap">
+  <form class="form-card" id="auth-form" data-mode="register" novalidate>
+    <div class="eyebrow">Join the community</div>
+    <h1>Create account</h1>
+    <label>Full name <span class="req">*</span>
+      <input name="name" autocomplete="name" required placeholder="e.g. Riya Sharma">
+    </label>
+    <label>Email <span class="req">*</span>
+      <input type="email" name="email" autocomplete="email" required placeholder="you@college.edu">
+    </label>
+    <label>Phone (optional)
+      <input name="phone" type="tel" autocomplete="tel" placeholder="For contact if your item is found">
+    </label>
+    <label>Password <span class="req">*</span>
+      <input type="password" name="password" minlength="6" autocomplete="new-password" required placeholder="At least 6 characters">
+    </label>
+    <button class="btn btn-primary" type="submit">Create account</button>
+    <p style="margin-top:16px;font-size:14px;color:var(--muted)">Already registered? <a class="text-link" href="login.html">Login</a></p>
+  </form>
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/common.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

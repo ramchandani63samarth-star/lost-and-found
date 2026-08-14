@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Browse Items · Lost &amp; Found</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container">
+    <a class="brand" href="index.html"><span class="brand-mark">↗</span> Lost &amp; Found</a>
+    <nav id="nav-actions" class="nav-actions"></nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="page-head">
+    <div class="eyebrow">Community reports</div>
+    <h1>Browse lost &amp; found</h1>
+    <p class="lead">Search across all reports. Use filters to narrow down by type, category, or location.</p>
+  </section>
+
+  <form id="search-form" class="toolbar">
+    <input name="search" placeholder="Search item, description or location" autocomplete="off">
+    <select name="type">
+      <option value="">All types</option>
+      <option value="lost">Lost</option>
+      <option value="found">Found</option>
+    </select>
+    <select name="category">
+      <option value="">All categories</option>
+      <option>Electronics</option>
+      <option>Documents</option>
+      <option>Wallet</option>
+      <option>Keys</option>
+      <option>Bags</option>
+      <option>Clothing</option>
+      <option>Jewellery</option>
+      <option>Other</option>
+    </select>
+    <input name="location" placeholder="Location" autocomplete="off">
+    <button class="btn btn-primary" type="submit">Search</button>
+    <button class="btn btn-ghost" type="button" id="reset-filters">Reset</button>
+  </form>
+
+  <div id="item-grid" class="cards"></div>
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/common.js"></script>
+<script src="js/items.js"></script>
+</body>
+</html>
